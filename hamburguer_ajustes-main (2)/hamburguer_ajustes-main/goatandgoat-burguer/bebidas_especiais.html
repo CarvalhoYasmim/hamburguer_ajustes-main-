@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanches</title>
+    <link rel="stylesheet" href="recursos/estilo/estilo.css">
+    <script type="text/javascript" src="recursos/js/modal.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html"><img src="recursos/imagens/mini_logo.png" alt="log"></a>
+        <ul>
+            <li><a href="lanches.html">Lanches</a></li>
+            <li><a href="condimentos.html">Molhos Especiais</a></li>
+            <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
+            <li><a href="bebidas_especiais.html">Bebidas Especiais</a></li>
+            <li><a href="seja_menbro.html">Seja Menbro</a></li>
+            <li onclick="listarProduto()" id=carrinho><a href="#" id="abrir_modal"><img src="recursos/imagens/carrinho.png" alt="">  </a></li>
+        </ul>
+            <div id="qta">
+                <span id="mostra_valor" >00</span> 
+            </div>
+</nav>
+
+<section id="lanches">
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/Coca Cola.jfif" alt="">
+        <p class="nome_lanche">Coca-Cola</p>
+        <p class="valor_lanche">R$:5,00</p>
+        <a onclick="comprar(1,5.00,'Coca-Cola')"   href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/Pepsi .jpg "alt="">
+        <p class="nome_lanche">Pepsi:</p>
+        <p class="valor_lanche">R$: 5,00</p>
+        <a  onclick="comprar(1, 5.00, 'Pepsi')" href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/Sprite.jpg" alt="">
+        <p class="nome_lanche">Sprite:</p>
+        <p class="valor_lanche">R$: 5,00</p>
+        <a  onclick="comprar(1,5.00,'Sprite')" href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/Fanta.jpg" alt="">
+        <p class="nome_lanche">Fanta:</p>
+        <p class="valor_lanche">R$:5,00</p>
+        <a onclick="comprar(1,5.00,'Fanta')"   href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/Maracuja.jpg" alt="">
+        <p class="nome_lanche">Copo de Suco de Maracuja</p>
+        <p class="valor_lanche">R$: 7,50</p>
+        <a  onclick="comprar(1, 7.50, 'Copo de Suco de Maracuja')" href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/Suco de laranja.jpg" alt="">
+        <p class="nome_lanche">Copo de Suco de laranja</p>
+        <p class="valor_lanche">R$: 7,50</p>
+        <a  onclick="comprar(1,7.50, 'Copo de Suco de laranja')" href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/agua.jpg" alt="">
+        <p class="nome_lanche">Água Mineral com Gás</p>
+        <p class="valor_lanche">R$:4,00</p>
+        <a onclick="comprar(1,4.00, 'Água Mineral com Gás')"   href="#">Comprar</a>
+    </div>
+    <div class="lanches_item">
+        <img src="recursos/imagens/bebidas/agua.jpg" alt="">
+        <p class="nome_lanche">Água Mineral sem Gás</p>
+        <p class="valor_lanche">R$: 3,00</p>
+        <a  onclick="comprar(1, 3.00, 'Água Mineral sem Gás')" href="#">Comprar</a>
+    </div>
+    
+</section>
+<!--------------------------------------Modal---------------------------------------->
+<div id="fade" class="hide" >
+
+</div>
+<div id="modal" class="hide">
+    <div id="modal_cabecalho">
+            <h1>Seus pedidos</h1>
+            <span onclick='removerElementos()' id="fechar_modal">X</span>
+    </div>
+    <div id="modal_corpo">
+            
+    </div>
+    <div id="modal_rodape">
+        <button id="pagares">Pagar</button>
+         <button  onclick='removerElemento()'id="fechar">Continuar Comprando</button>
+    </div>
+</div>
+
+
+ <script type="text/javascript" src="recursos/js/action_lanches.js"></script>
+ <script type="text/javascript" src="recursos/js/model.js"></script>
+</body>
+
+</html>

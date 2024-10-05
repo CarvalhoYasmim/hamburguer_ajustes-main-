@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoatAndGoat - Burger</title>
+    <link rel="stylesheet" href="recursos/estilo/estilo.css">
+</head>
+
+<body>
+    <div id="pagar_cartao">
+        <h1>Pagamentos</h1>
+        <a href="index.html"><img src="recursos/imagens/mini_logo.png" alt="Logo GoatAndGoat"></a>
+    </div>
+
+    <div id="pagamentos">
+        <section id="cartao">
+            <h2>Formas de Pagamento</h2>
+            <form action="processar_pagamento.php" method="POST">
+                <!-- Selecione a bandeira do cartão -->
+                <div id="selecione_cartao">
+                    <label>
+                        <input type="radio" value="MasterCard" name="bandeira" checked>
+                        MasterCard
+                    </label>
+                    <label>
+                        <input type="radio" value="Visa" name="bandeira">
+                        Visa
+                    </label>
+                    <label>
+                        <input type="radio" value="American Express" name="bandeira">
+                        American Express
+                    </label>
+                    <label>
+                        <input type="radio" value="Elo" name="bandeira">
+                        Elo
+                    </label>
+                </div>
+
+                <!-- Imagens das bandeiras -->
+                <div id="selecione_bandeira">
+                    <img src="recursos/imagens/bandeiras/mastercard.png" alt="MasterCard">
+                    <img src="recursos/imagens/bandeiras/visa.png" alt="Visa">
+                    <img src="recursos/imagens/bandeiras/america.jpg" alt="American Express">
+                </div>
+
+                <!-- Campos do formulário de pagamento -->
+                <label for="car_band">Digite o número do seu Cartão</label>
+                <input type="text" id="car_band" name="numero_cartao" required>
+
+                <label for="nome">Nome impresso no Cartão</label>
+                <input type="text" id="nome" name="nome_cartao" required>
+
+                <label for="cpf">Digite o seu CPF</label>
+                <input type="number" id="cpf" name="cpf" required>
+
+                <label for="codigo">Código de segurança (CVV)</label>
+                <input type="number" id="codigo" name="codigo_seguranca" required>
+            </form>
+        </section>
+
+        <!-- Detalhes do pedido -->
+        <section id="detalhes">
+            <h2>Detalhes do Pedido</h2>
+            <div id="pedidos_nomes">
+                <p>Item 1: seus pedidos</p>
+                <p>Item 2: seus pedidos</p>
+                <p>Item 3: seus pedidos</p>
+                <p>Item 4: seus pedidos</p>
+                <p>Item 5: seus pedidos</p>
+            </div>
+
+            <p id="valor_total">Total: R$ 100,00</p>
+
+            <hr>
+
+            <!-- Campo de CEP -->
+            <label for="cep">Digite seu CEP</label>
+            <input type="text" id="cep" name="cep" placeholder="CEP" required>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="recursos/js/action_index.js"></script>
+</body>
+
+</html>
