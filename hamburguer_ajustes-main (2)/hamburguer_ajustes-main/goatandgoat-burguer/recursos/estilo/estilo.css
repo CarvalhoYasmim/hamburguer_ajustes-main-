@@ -102,14 +102,14 @@ nav span{
     border-radius: 20px;
     border: solid;
     font-size: 2em;
-    color: white;
-	background-color: hwb(0 53% 33%);
+    color: rgb(207, 181, 181);
+	background-color: hwb(0 0% 0%);
 	border-style: outset;
     
 }
 #secao section button a{
     text-decoration: none;
-    color: #91b7b8;
+    color: #668388;
 
 }
 #secao section button:hover {
@@ -159,7 +159,7 @@ nav span{
     border-radius: 23px ;
     width: 303px;
     height: 500px;
-    background-color: hsla(0, 0%, 96%, 0.623);
+    background-color: rgba(255, 235, 235, 0.692);
     border: 2px solid black;
 }
 .descricao_lanche{
@@ -193,7 +193,7 @@ nav span{
     border: 2px outset #8db0b3;
     font-size: 1.5em;
     border-radius: 20px;
-    color: rgb(255, 255, 255);
+    color: #e2e2e2;
     font-weight: 600;
     display: inline;
     background-color: hsl(180, 18%, 62%);
@@ -345,7 +345,7 @@ input[type="text"]:focus{
 
 #modal_rodape button{
     padding: .6rem 1.2rem;
-    background-color: #888;
+    background-color: #8f5252;
     color: #fff;
     border:none;
     border-radius: 20px;
